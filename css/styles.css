@@ -457,6 +457,92 @@ h3, .h3 {
   color: var(--steel-300);
 }
 
+/* ---------- Browser frame (capturas de producto) ---------- */
+
+.browser-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #14161a;
+  border: 1px solid #26292d;
+  box-shadow: 0 24px 60px rgba(11, 12, 14, 0.35);
+}
+
+.browser-frame__bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 16px;
+  background: #1c1e21;
+  border-bottom: 1px solid #26292d;
+}
+
+.browser-frame__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3a3f45;
+}
+
+.browser-frame img {
+  display: block;
+  width: 100%;
+}
+
+.showcase-hero {
+  margin-top: 44px;
+}
+
+/* ---------- Feature rows (alternado imagen/texto) ---------- */
+
+.feature-row {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 0;
+}
+
+.feature-row:not(:last-child) {
+  border-bottom: 1px solid var(--line);
+}
+
+.section--dark .feature-row:not(:last-child) { border-bottom-color: #26292d; }
+
+.feature-row--reverse { grid-template-columns: 0.95fr 1.05fr; }
+.feature-row--reverse .feature-row__media { order: 2; }
+.feature-row--reverse .feature-row__text { order: 1; }
+
+.feature-row__text h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 14px; }
+.feature-row__text p { color: var(--text-on-light-muted); max-width: 46ch; }
+
+/* ---------- Reveal on scroll ---------- */
+
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Solo se oculta si JS confirmó que puede revelarlo; sin JS, el contenido es visible desde el inicio. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 860px) {
+  .feature-row,
+  .feature-row--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 40px 0;
+  }
+  .feature-row--reverse .feature-row__media,
+  .feature-row--reverse .feature-row__text { order: initial; }
+}
+
 /* ---------- Timeline / Enfoque ---------- */
 
 .timeline {

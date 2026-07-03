@@ -17,4 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = `mailto:contacto@ingsotec.co?subject=${asunto}&body=${cuerpo}`;
     });
   }
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el, i) => {
+      el.style.transitionDelay = `${(i % 4) * 70}ms`;
+      observer.observe(el);
+    });
+  }
 });

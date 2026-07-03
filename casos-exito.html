@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -96,15 +97,15 @@
 
 <section class="section">
   <div class="container">
-    <span class="eyebrow">La solución</span>
-    <img src="assets/reciva-logo.png" alt="Reciva" style="height:44px;width:auto;margin-top:16px;">
-    <h2 style="margin-top:18px;max-width:22ch;">Reciva: software de escritorio a la medida</h2>
-    <p class="lede" style="margin-top:18px;max-width:60ch;">
+    <span class="eyebrow reveal">La solución</span>
+    <img src="assets/reciva-logo.png" alt="Reciva" class="reveal" style="height:44px;width:auto;margin-top:16px;">
+    <h2 class="reveal" style="margin-top:18px;max-width:22ch;">Reciva: software de escritorio a la medida</h2>
+    <p class="lede reveal" style="margin-top:18px;max-width:60ch;">
       Diseñamos y construimos Reciva desde cero para INGESAM: una aplicación de escritorio con base de datos centralizada
       en la nube, control de acceso por roles y los módulos que su operación diaria realmente necesita.
     </p>
 
-    <div class="tag-row">
+    <div class="tag-row reveal">
       <span class="tag">Clientes</span>
       <span class="tag">Cobros</span>
       <span class="tag">Recaudos</span>
@@ -113,7 +114,7 @@
       <span class="tag">Volcado AIR-E</span>
     </div>
 
-    <div class="grid-3" style="margin-top:40px;">
+    <div class="grid-3 reveal" style="margin-top:40px;">
       <div class="card card--accent">
         <h3>Volcado automatizado</h3>
         <p>Genera el archivo periódico que integra el cobro del servicio de aseo en la factura de energía de AIR-E, con convenio y sufijo configurables por la empresa.</p>
@@ -127,15 +128,79 @@
         <p>Información centralizada y con respaldo, accesible desde el equipo de trabajo sin depender de un servidor local.</p>
       </div>
     </div>
+
+    <div class="showcase-hero reveal">
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dot"></span><span class="browser-frame__dot"></span><span class="browser-frame__dot"></span>
+        </div>
+        <img src="assets/reciva-dashboard.jpg" alt="Panel principal de Reciva mostrando suscriptores, facturación y recaudo del período">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <span class="eyebrow reveal">El sistema, por dentro</span>
+    <h2 class="reveal" style="margin-top:14px;max-width:26ch;">Cada módulo, pensado para el trabajo diario</h2>
+
+    <div class="feature-row reveal">
+      <div class="feature-row__media">
+        <div class="browser-frame">
+          <div class="browser-frame__bar">
+            <span class="browser-frame__dot"></span><span class="browser-frame__dot"></span><span class="browser-frame__dot"></span>
+          </div>
+          <img src="assets/reciva-suscriptores.jpg" alt="Listado de suscriptores en Reciva">
+        </div>
+      </div>
+      <div class="feature-row__text">
+        <span class="eyebrow">Suscriptores</span>
+        <h3 style="margin-top:10px;">Toda la cartera de clientes, en un solo lugar</h3>
+        <p>Búsqueda por cuenta o nombre, estado de cada suscriptor y su estrato, con exportación directa a Excel para los reportes que la operación ya usa.</p>
+      </div>
+    </div>
+
+    <div class="feature-row feature-row--reverse reveal">
+      <div class="feature-row__media">
+        <div class="browser-frame">
+          <div class="browser-frame__bar">
+            <span class="browser-frame__dot"></span><span class="browser-frame__dot"></span><span class="browser-frame__dot"></span>
+          </div>
+          <img src="assets/reciva-facturacion.jpg" alt="Facturación por período en Reciva">
+        </div>
+      </div>
+      <div class="feature-row__text">
+        <span class="eyebrow">Facturación</span>
+        <h3 style="margin-top:10px;">Facturas pendientes, pagadas y recaudos, por período</h3>
+        <p>Consulta por estrato o barrio, con desglose automático de lo facturado, recaudado y en cartera para cualquier mes.</p>
+      </div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="feature-row__media">
+        <div class="browser-frame">
+          <div class="browser-frame__bar">
+            <span class="browser-frame__dot"></span><span class="browser-frame__dot"></span><span class="browser-frame__dot"></span>
+          </div>
+          <img src="assets/reciva-estadisticas.jpg" alt="Estadísticas de pagos en Reciva">
+        </div>
+      </div>
+      <div class="feature-row__text">
+        <span class="eyebrow">Estadísticas</span>
+        <h3 style="margin-top:10px;">Indicadores claros para tomar decisiones</h3>
+        <p>Porcentaje de cobro, cartera pendiente y recaudo desglosados por estrato — la misma vista que usa la gerencia para revisar cada cierre de mes.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section section--dark">
   <div class="container">
-    <span class="eyebrow">En operación</span>
-    <h2 style="margin-top:14px;max-width:22ch;">Resultados en producción</h2>
+    <span class="eyebrow reveal">En operación</span>
+    <h2 class="reveal" style="margin-top:14px;max-width:22ch;">Resultados en producción</h2>
 
-    <div class="stats-grid">
+    <div class="stats-grid reveal">
       <div class="stat">
         <div class="stat__number">39,679</div>
         <div class="stat__label">Recaudos registrados en la plataforma</div>
