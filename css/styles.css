@@ -403,6 +403,60 @@ h3, .h3 {
   background: var(--steel-500);
 }
 
+/* ---------- Stats (casos de éxito) ---------- */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.stat { text-align: center; }
+
+.stat__number {
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--text-on-light);
+}
+
+.section--dark .stat__number,
+.section--radial .stat__number { color: var(--text-on-dark); }
+
+.stat__label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-on-light-muted);
+}
+
+.section--dark .stat__label,
+.section--radial .stat__label { color: var(--steel-300); }
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--text-on-light-muted);
+}
+
+.section--dark .tag,
+.section--radial .tag {
+  border-color: var(--steel-800);
+  color: var(--steel-300);
+}
+
 /* ---------- Timeline / Enfoque ---------- */
 
 .timeline {
@@ -555,6 +609,7 @@ h3, .h3 {
 
 @media (max-width: 860px) {
   .grid-3 { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 40px; }
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .nav { display: none; }
