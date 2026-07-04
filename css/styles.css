@@ -220,9 +220,7 @@ h3, .h3 {
 /* ---------- Header ---------- */
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
+  position: relative;
   background: rgba(11, 16, 14, 0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line-dark);
