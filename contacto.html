@@ -108,6 +108,9 @@
         <span class="eyebrow">Escríbenos</span>
         <h3 style="margin-top:12px;margin-bottom:22px;">Envía un mensaje</h3>
         <form class="contact-form">
+          <input type="hidden" name="access_key" value="70715dee-4a0c-41b3-b764-1f4e66066344">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde ingsotec.co">
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
           <div class="field">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -121,6 +124,7 @@
             <textarea id="mensaje" name="mensaje" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Enviar</button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </div>

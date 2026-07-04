@@ -7,14 +7,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.querySelector('.contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    const statusEl = form.querySelector('.form-status');
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const nombre = form.nombre.value.trim();
-      const correo = form.correo.value.trim();
-      const mensaje = form.mensaje.value.trim();
-      const asunto = encodeURIComponent(`Contacto web — ${nombre || 'Nuevo mensaje'}`);
-      const cuerpo = encodeURIComponent(`${mensaje}\n\n— ${nombre} (${correo})`);
-      window.location.href = `mailto:contacto@ingsotec.co?subject=${asunto}&body=${cuerpo}`;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      if (statusEl) {
+        statusEl.textContent = '';
+        statusEl.classList.remove('form-status--ok', 'form-status--error');
+      }
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form).entries())),
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.message || 'Error desconocido');
+
+        form.reset();
+        if (statusEl) {
+          statusEl.textContent = 'Mensaje enviado. Te responderemos pronto.';
+          statusEl.classList.add('form-status--ok');
+        }
+      } catch (err) {
+        if (statusEl) {
+          statusEl.textContent = 'Hubo un error al enviar. Intenta de nuevo o escríbenos a contacto@ingsotec.co.';
+          statusEl.classList.add('form-status--error');
+        }
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar';
+      }
     });
   }
 
