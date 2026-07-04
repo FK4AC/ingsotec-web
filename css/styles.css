@@ -943,6 +943,8 @@ h3, .h3 {
   color: var(--steel-300);
 }
 
+.footer-bottom a:hover { color: var(--em-soft); }
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
