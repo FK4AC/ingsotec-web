@@ -181,20 +181,16 @@ h3, .h3 {
   font-size: 1.15rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-on-light);
+  color: var(--text-on-dark);
 }
-
-.section--dark .brand__wordmark { color: var(--text-on-dark); }
 
 .brand__tagline {
   font-weight: 600;
   font-size: 0.62rem;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--steel-500);
+  color: var(--text-on-dark-muted);
 }
-
-.section--dark .brand__tagline { color: var(--text-on-dark-muted); }
 
 .brand .isotipo { width: 40px; height: 40px; }
 
@@ -218,10 +214,8 @@ h3, .h3 {
   font-size: 0.7rem;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--steel-500);
+  color: var(--steel-300);
 }
-
-.section--dark .tagline-rule__text { color: var(--steel-300); }
 
 /* ---------- Header ---------- */
 
@@ -229,9 +223,9 @@ h3, .h3 {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(11, 16, 14, 0.9);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line-dark);
 }
 
 .site-header .container {
@@ -256,15 +250,15 @@ h3, .h3 {
 .nav a:not(.btn) {
   font-weight: 600;
   font-size: 0.92rem;
-  color: var(--text-on-light-muted);
+  color: var(--steel-200);
   padding: 6px 0;
   border-bottom: 2px solid transparent;
 }
 
 .nav a:not(.btn):hover,
 .nav a[aria-current="page"]:not(.btn) {
-  color: var(--text-on-light);
-  border-bottom-color: var(--em-deep);
+  color: var(--text-on-dark);
+  border-bottom-color: var(--em-base);
 }
 
 .nav .btn--primary { padding: 10px 20px; font-size: 0.88rem; }
@@ -281,7 +275,7 @@ h3, .h3 {
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--text-on-light);
+  background: var(--text-on-dark);
   margin: 5px 0;
 }
 
@@ -790,11 +784,11 @@ h3, .h3 {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--paper-white);
+    background: var(--ink-900);
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 24px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line-dark);
     gap: 18px;
   }
   .site-header.is-open .nav .btn--primary { align-self: flex-start; }
