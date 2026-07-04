@@ -26,9 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.display = el.dataset.case === value ? '' : 'none';
       });
     };
+
+    const requested = new URLSearchParams(window.location.search).get('empresa');
+    if (requested && caseSelect.querySelector(`option[value="${requested}"]`)) {
+      caseSelect.value = requested;
+    }
+
     showCase(caseSelect.value);
     caseSelect.addEventListener('change', () => showCase(caseSelect.value));
   }
+
+  document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+    document.addEventListener('click', (e) => {
+      if (dropdown.open && !dropdown.contains(e.target)) {
+        dropdown.open = false;
+      }
+    });
+  });
 
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
