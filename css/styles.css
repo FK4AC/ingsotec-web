@@ -450,8 +450,20 @@ h3, .h3 {
   overflow: hidden;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .section--dark .grid-3,
-.section--radial .grid-3 {
+.section--radial .grid-3,
+.section--dark .grid-2,
+.section--radial .grid-2 {
   background: var(--line-dark);
   border-color: var(--line-dark);
 }
@@ -949,6 +961,7 @@ h3, .h3 {
 
 @media (max-width: 860px) {
   .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; gap: 40px; }
   .value-row { grid-template-columns: 1fr; }
   .value-item { border-right: none; border-bottom: 1px solid var(--line-dark); padding-bottom: 24px; }
