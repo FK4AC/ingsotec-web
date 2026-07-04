@@ -744,49 +744,6 @@ h3, .h3 {
   border-color: var(--em-base);
 }
 
-/* ---------- Lista numerada de servicios ---------- */
-
-.service-list {
-  margin-top: 8px;
-  border-top: 1px solid var(--line);
-}
-
-.service-item {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 24px;
-  padding: 36px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.service-item__num {
-  font-weight: 800;
-  font-size: 1.7rem;
-  line-height: 1;
-  color: var(--em-deep);
-}
-
-.service-item__body h3 { margin-bottom: 8px; }
-
-.service-item__body p {
-  color: var(--text-on-light-muted);
-  max-width: 64ch;
-}
-
-.service-quote-tag {
-  display: inline-block;
-  margin-top: 14px;
-  font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--em-deep);
-}
-
-@media (max-width: 560px) {
-  .service-item { grid-template-columns: 1fr; gap: 8px; }
-}
-
 /* ---------- Timeline / Enfoque ---------- */
 
 .timeline {
