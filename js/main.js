@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const caseSelect = document.getElementById('case-select');
+  if (caseSelect) {
+    const cases = document.querySelectorAll('.case-study');
+    const showCase = (value) => {
+      cases.forEach((el) => {
+        el.style.display = el.dataset.case === value ? '' : 'none';
+      });
+    };
+    showCase(caseSelect.value);
+    caseSelect.addEventListener('change', () => showCase(caseSelect.value));
+  }
+
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
     const observer = new IntersectionObserver((entries) => {
