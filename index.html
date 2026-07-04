@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INGSOTEC — Ingeniería y Soluciones Tecnológicas</title>
-<meta name="description" content="INGSOTEC: software, bases de datos y soporte técnico. Ingeniería y soluciones tecnológicas a la medida.">
+<meta name="description" content="INGSOTEC: software a medida, arquitectura de bases de datos y soporte técnico continuo. Ingeniería que sostiene tu operación.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Cg transform='rotate(45 48 48)'%3E%3Cg fill='%2367736d'%3E%3Crect x='38' y='17' width='6' height='9' rx='1.5'/%3E%3Crect x='52' y='17' width='6' height='9' rx='1.5'/%3E%3Crect x='38' y='70' width='6' height='9' rx='1.5'/%3E%3Crect x='52' y='70' width='6' height='9' rx='1.5'/%3E%3Crect x='17' y='38' width='9' height='6' rx='1.5'/%3E%3Crect x='17' y='52' width='9' height='6' rx='1.5'/%3E%3Crect x='70' y='38' width='9' height='6' rx='1.5'/%3E%3Crect x='70' y='52' width='9' height='6' rx='1.5'/%3E%3C/g%3E%3Crect x='28' y='28' width='40' height='40' rx='9' fill='%23aab4ad'/%3E%3C/g%3E%3Cg fill='none' stroke='%230C7A52' stroke-width='4.6' stroke-linecap='butt' stroke-linejoin='miter'%3E%3Cpolyline points='39.5,41 33.5,48 39.5,55'/%3E%3Cpolyline points='56.5,41 62.5,48 56.5,55'/%3E%3Cline x1='50.5' y1='41' x2='45.5' y2='55'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
         <defs>
           <linearGradient id="ing-body-header" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stop-color="#e2e7e3"/>
-            <stop offset="0.6" stop-color="#aab4ad"/>
+            <stop offset="0.55" stop-color="#aab4ad"/>
             <stop offset="1" stop-color="#cbd2cc"/>
           </linearGradient>
         </defs>
@@ -32,7 +33,7 @@
             <rect x="70" y="38" width="9" height="6" rx="1.5"/><rect x="70" y="52" width="9" height="6" rx="1.5"/>
           </g>
           <rect x="28" y="28" width="40" height="40" rx="9" fill="url(#ing-body-header)"/>
-        <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#0C7A52" stroke-width="2.4"/>
+          <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#0C7A52" stroke-width="2.4"/>
         </g>
         <g fill="none" stroke="#0C7A52" stroke-width="3.6" stroke-linecap="butt" stroke-linejoin="miter">
           <polyline points="39.5,41 33.5,48 39.5,55"/>
@@ -47,11 +48,10 @@
     </a>
 
     <nav class="nav" aria-label="Principal">
-      <a href="index.html" aria-current="page">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="enfoque.html">Enfoque</a>
-      <a href="casos-exito.html">Casos de Éxito</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="btn btn--primary">Contacto</a>
     </nav>
 
     <button class="nav-toggle" aria-label="Abrir menú">
@@ -61,88 +61,77 @@
 </header>
 
 <section class="hero section--radial">
-  <div class="container">
-    <svg class="isotipo--lg" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="INGSOTEC">
-      <defs>
-        <linearGradient id="ing-body-hero" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#232a27"/>
-          <stop offset="0.6" stop-color="#0f1412"/>
-          <stop offset="1" stop-color="#1a201e"/>
-        </linearGradient>
-      </defs>
-      <g transform="rotate(45 48 48)">
-        <g fill="#8b968f">
-          <rect x="38" y="17" width="6" height="9" rx="1.5"/><rect x="52" y="17" width="6" height="9" rx="1.5"/>
-          <rect x="38" y="70" width="6" height="9" rx="1.5"/><rect x="52" y="70" width="6" height="9" rx="1.5"/>
-          <rect x="17" y="38" width="9" height="6" rx="1.5"/><rect x="17" y="52" width="9" height="6" rx="1.5"/>
-          <rect x="70" y="38" width="9" height="6" rx="1.5"/><rect x="70" y="52" width="9" height="6" rx="1.5"/>
-        </g>
-        <rect x="28" y="28" width="40" height="40" rx="9" fill="url(#ing-body-hero)"/>
-      <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#12B886" stroke-width="2.4"/>
-      </g>
-      <g fill="none" stroke="#2DD69A" stroke-width="3.6" stroke-linecap="butt" stroke-linejoin="miter">
-        <polyline points="39.5,41 33.5,48 39.5,55"/>
-        <polyline points="56.5,41 62.5,48 56.5,55"/>
-        <line x1="50.5" y1="41" x2="45.5" y2="55"/>
-      </g>
-    </svg>
+  <div class="container hero-split">
+    <div class="hero__text">
+      <span class="status-chip"><span class="status-dot"></span>Sistemas en operación 24/7</span>
 
-    <div class="tagline-rule">
-      <span class="tagline-rule__line"></span>
-      <span class="tagline-rule__text">Ingeniería y Soluciones Tecnológicas</span>
-      <span class="tagline-rule__line"></span>
+      <h1>Ingeniería que <span class="accent-word">sostiene</span> tu operación</h1>
+
+      <p class="lede">
+        Software a medida, arquitectura de datos y soporte continuo. Construimos y mantenemos
+        los sistemas críticos de tu empresa.
+      </p>
+
+      <div class="actions">
+        <a href="contacto.html" class="btn btn--primary">Solicitar propuesta</a>
+        <a href="servicios.html" class="btn btn--ghost">Ver servicios</a>
+      </div>
     </div>
 
-    <h1>Ingeniería que <span class="accent-word">sostiene</span> tu operación</h1>
-    <p class="lede" style="margin-left:auto;margin-right:auto;">
-      Desarrollamos software, administramos bases de datos y damos soporte técnico continuo
-      para negocios que no pueden permitirse fallas.
-    </p>
-
-    <div class="actions">
-      <a href="servicios.html" class="btn btn--primary">Ver servicios</a>
-      <a href="contacto.html" class="btn btn--ghost">Contáctanos</a>
+    <div class="hero__symbol">
+      <svg class="isotipo--lg" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="INGSOTEC">
+        <defs>
+          <linearGradient id="ing-body-hero" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#232a27"/>
+            <stop offset="0.55" stop-color="#0f1412"/>
+            <stop offset="1" stop-color="#1a201e"/>
+          </linearGradient>
+        </defs>
+        <g transform="rotate(45 48 48)">
+          <g fill="#8b968f">
+            <rect x="38" y="17" width="6" height="9" rx="1.5"/><rect x="52" y="17" width="6" height="9" rx="1.5"/>
+            <rect x="38" y="70" width="6" height="9" rx="1.5"/><rect x="52" y="70" width="6" height="9" rx="1.5"/>
+            <rect x="17" y="38" width="9" height="6" rx="1.5"/><rect x="17" y="52" width="9" height="6" rx="1.5"/>
+            <rect x="70" y="38" width="9" height="6" rx="1.5"/><rect x="70" y="52" width="9" height="6" rx="1.5"/>
+          </g>
+          <rect x="28" y="28" width="40" height="40" rx="9" fill="url(#ing-body-hero)"/>
+          <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#12B886" stroke-width="2.4"/>
+        </g>
+        <g fill="none" stroke="#2DD69A" stroke-width="3.6" stroke-linecap="butt" stroke-linejoin="miter">
+          <polyline points="39.5,41 33.5,48 39.5,55"/>
+          <polyline points="56.5,41 62.5,48 56.5,55"/>
+          <line x1="50.5" y1="41" x2="45.5" y2="55"/>
+        </g>
+      </svg>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <span class="eyebrow">Quiénes somos</span>
-    <h2 style="margin-top:14px;max-width:20ch;">Un equipo técnico, no un intermediario</h2>
-    <p class="lede" style="margin-top:22px;">
-      En INGSOTEC diseñamos, construimos y mantenemos los sistemas que tu empresa usa todos los días:
-      desde aplicaciones a medida hasta la infraestructura de datos que las sostiene. Sin capas
-      innecesarias entre el problema y la solución.
-    </p>
-  </div>
-</section>
+    <span class="eyebrow reveal">Qué hacemos</span>
+    <h2 class="reveal" style="margin-top:14px;">Servicios</h2>
 
-<section class="section section--alt">
-  <div class="container">
-    <span class="eyebrow">Qué hacemos</span>
-    <h2 style="margin-top:14px;">Servicios</h2>
-
-    <div class="grid-3" style="margin-top:48px;">
+    <div class="grid-3 reveal" style="margin-top:48px;">
       <div class="card card--accent">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/>
         </svg>
-        <h3>Software</h3>
+        <h3>Software a medida</h3>
         <p>Aplicaciones de escritorio, web y móviles diseñadas alrededor de tus procesos reales.</p>
       </div>
       <div class="card card--accent">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/>
         </svg>
-        <h3>Bases de Datos</h3>
-        <p>Diseño, migración, optimización e integridad de los datos que tu negocio no puede perder.</p>
+        <h3>Bases de datos</h3>
+        <p>Arquitectura, migración e integridad de los datos que tu negocio no puede perder.</p>
       </div>
       <div class="card card--accent">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M20 19v1a3 3 0 0 1-3 3h-3"/>
         </svg>
-        <h3>Soporte</h3>
+        <h3>Soporte 24/7</h3>
         <p>Acompañamiento técnico continuo: monitoreo, mantenimiento y respuesta cuando algo falla.</p>
       </div>
     </div>
@@ -155,14 +144,39 @@
 
 <section class="section section--dark">
   <div class="container">
-    <span class="eyebrow">Cómo trabajamos</span>
-    <h2 style="margin-top:14px;max-width:22ch;">Un proceso claro, de principio a fin</h2>
-    <p class="lede" style="margin-top:18px;">
-      Cuatro etapas: entendemos el problema, diseñamos la solución, la construimos y la sostenemos en el tiempo.
+    <span class="eyebrow reveal">Por qué INGSOTEC</span>
+    <h2 class="reveal" style="margin-top:14px;max-width:22ch;">Ingeniería sin atajos, desde el primer diagnóstico</h2>
+    <p class="lede reveal" style="margin-top:18px;">
+      No vendemos plantillas ni promesas genéricas. Cada sistema se diseña alrededor de cómo tu
+      operación ya funciona.
     </p>
-    <div style="margin-top:32px;">
+
+    <div class="value-row reveal">
+      <div class="value-item">
+        <h3>Diagnóstico real</h3>
+        <p>Entendemos tu operación antes de proponer una sola línea de código.</p>
+      </div>
+      <div class="value-item">
+        <h3>Datos íntegros</h3>
+        <p>Ninguna entrega compromete la trazabilidad ni la integridad de tu información.</p>
+      </div>
+      <div class="value-item">
+        <h3>Presencia post-entrega</h3>
+        <p>El trabajo no termina en el lanzamiento. Seguimos disponibles para el soporte.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;">
       <a href="enfoque.html" class="btn btn--ghost">Ver nuestro enfoque</a>
     </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <div class="container">
+    <h2 style="max-width:22ch;margin:0 auto;">¿Listo para un sistema que se ajuste a tu operación?</h2>
+    <p class="lede" style="margin:18px auto 32px;text-align:center;">Cuéntanos qué necesitas y te decimos, sin rodeos, cómo lo abordaríamos.</p>
+    <a href="contacto.html" class="btn btn--primary">Solicitar propuesta</a>
   </div>
 </section>
 
@@ -174,7 +188,7 @@
           <defs>
             <linearGradient id="ing-body-footer" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0" stop-color="#232a27"/>
-              <stop offset="0.6" stop-color="#0f1412"/>
+              <stop offset="0.55" stop-color="#0f1412"/>
               <stop offset="1" stop-color="#1a201e"/>
             </linearGradient>
           </defs>
@@ -186,7 +200,7 @@
               <rect x="70" y="38" width="9" height="6" rx="1.5"/><rect x="70" y="52" width="9" height="6" rx="1.5"/>
             </g>
             <rect x="28" y="28" width="40" height="40" rx="9" fill="url(#ing-body-footer)"/>
-          <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#12B886" stroke-width="2.4"/>
+            <rect x="28" y="28" width="40" height="40" rx="9" fill="none" stroke="#12B886" stroke-width="2.4"/>
           </g>
           <g fill="none" stroke="#2DD69A" stroke-width="3.6" stroke-linecap="butt" stroke-linejoin="miter">
             <polyline points="39.5,41 33.5,48 39.5,55"/>
@@ -201,16 +215,15 @@
       </a>
 
       <nav class="footer-nav" aria-label="Footer">
-        <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
         <a href="enfoque.html">Enfoque</a>
-        <a href="casos-exito.html">Casos de Éxito</a>
+        <a href="nosotros.html">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
     <hr class="hairline">
     <div class="footer-bottom">
-      <span>© 2026 INGSOTEC. Todos los derechos reservados.</span>
+      <span class="footer-legal">© 2026 INGSOTEC. NIT 902.082.120-9. Todos los derechos reservados.</span>
       <span>ingsotec.co · contacto@ingsotec.co</span>
     </div>
   </div>
