@@ -482,6 +482,8 @@ h3, .h3 {
   border-image: linear-gradient(180deg, var(--em-base), var(--em-deep)) 1;
 }
 
+.card--wide { grid-column: span 2; }
+
 .card .icon {
   width: 34px;
   height: 34px;
@@ -919,6 +921,7 @@ h3, .h3 {
 @media (max-width: 860px) {
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
+  .card--wide { grid-column: span 1; }
   .stats-grid { grid-template-columns: 1fr; gap: 40px; }
   .value-row { grid-template-columns: 1fr; }
   .value-item { border-right: none; border-bottom: 1px solid var(--line-dark); padding-bottom: 24px; }
