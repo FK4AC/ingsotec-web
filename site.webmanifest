@@ -1,0 +1,20 @@
+{
+  "name": "INGSOTEC — Ingeniería y Soluciones Tecnológicas",
+  "short_name": "INGSOTEC",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b100e",
+  "theme_color": "#0b100e",
+  "icons": [
+    {
+      "src": "assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
